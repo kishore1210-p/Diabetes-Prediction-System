@@ -1,9 +1,6 @@
 __pycache__/
 *.py[cod]
 .streamlit/secrets.toml
-model/*.joblib
-model/*.csv
-model/*.json
 .venv/
 venv/
 .DS_Store

@@ -1,0 +1,132 @@
+{
+  "trained_at_utc": "2026-10-07T11:53:54.922389+00:00",
+  "dataset_name": "diabetes_prediction_dataset.csv",
+  "training_summary": {
+    "raw_rows": 100000,
+    "clean_rows": 96146,
+    "duplicates_removed": 3854,
+    "feature_count": 8,
+    "target_distribution": {
+      "non_diabetic": 87664,
+      "diabetic": 8482
+    },
+    "test_rows": 19230,
+    "random_state": 42
+  },
+  "best_model": "Random Forest",
+  "best_metrics": {
+    "accuracy": 0.9396775871034841,
+    "precision": 0.6167247386759582,
+    "recall": 0.8349056603773585,
+    "f1_score": 0.7094188376753507,
+    "roc_auc": 0.9742135427987888
+  },
+  "model_comparison": [
+    {
+      "model": "Logistic Regression",
+      "status": "Trained",
+      "accuracy": 0.8844513780551222,
+      "precision": 0.4250712250712251,
+      "recall": 0.8797169811320755,
+      "f1_score": 0.5731847867844795,
+      "roc_auc": 0.9600683160587193
+    },
+    {
+      "model": "Decision Tree",
+      "status": "Trained",
+      "accuracy": 0.8893395735829434,
+      "precision": 0.43810888252149,
+      "recall": 0.9015330188679245,
+      "f1_score": 0.5896644812957964,
+      "roc_auc": 0.9634518030737049
+    },
+    {
+      "model": "Random Forest",
+      "status": "Trained",
+      "accuracy": 0.9396775871034841,
+      "precision": 0.6167247386759582,
+      "recall": 0.8349056603773585,
+      "f1_score": 0.7094188376753507,
+      "roc_auc": 0.9742135427987888
+    }
+  ],
+  "skipped_models": [
+    {
+      "model": "XGBoost",
+      "status": "Skipped",
+      "reason": "Optional dependency xgboost is not installed."
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Hba1C Level",
+      "importance": 0.3840622843135654
+    },
+    {
+      "feature": "Blood Glucose Level",
+      "importance": 0.2774118148891782
+    },
+    {
+      "feature": "Age",
+      "importance": 0.16872778156539436
+    },
+    {
+      "feature": "Bmi",
+      "importance": 0.09451593155822187
+    },
+    {
+      "feature": "Hypertension",
+      "importance": 0.029393520467561732
+    },
+    {
+      "feature": "Heart Disease",
+      "importance": 0.016305154857867248
+    },
+    {
+      "feature": "Smoking History No Info",
+      "importance": 0.01139218116149644
+    },
+    {
+      "feature": "Smoking History Former",
+      "importance": 0.005495146794511237
+    },
+    {
+      "feature": "Gender Male",
+      "importance": 0.0030027619307772765
+    },
+    {
+      "feature": "Gender Female",
+      "importance": 0.002552784119246698
+    },
+    {
+      "feature": "Smoking History Never",
+      "importance": 0.0024465852924988297
+    },
+    {
+      "feature": "Smoking History Current",
+      "importance": 0.0017260865378632504
+    },
+    {
+      "feature": "Smoking History Not Current",
+      "importance": 0.0017083468594742829
+    },
+    {
+      "feature": "Smoking History Ever",
+      "importance": 0.0012581003693185374
+    },
+    {
+      "feature": "Gender Other",
+      "importance": 1.5192830246763163e-06
+    }
+  ],
+  "feature_columns": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ]
+}
